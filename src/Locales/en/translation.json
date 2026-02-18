@@ -1,0 +1,460 @@
+{
+  "navigation": {
+    "topBar": {
+      "promo": "Get 1 Product Free With $200.00 Order",
+      "todaysDeal": "Today's Deal",
+      "customerService": "Customer Service",
+      "giftCertificates": "Gift Certificates"
+    },
+    "menu": {
+      "home": "Home",
+      "services": "Rooms",
+      "about": "About",
+      "pages": "Pages",
+      "amenities": "Amenities",
+      "account": "Account",
+      "loginRegister": "Login/Register"
+    },
+
+    "shopItems": {
+      "allServices": {
+        "name": "All Services",
+        "path": "/services",
+        "description": "Browse our complete collection"
+      },
+      "Categories": {
+        "name": "Categories",
+        "path": "/categories",
+        "description": "Browse all categories"
+      },
+
+      "newArrivals": {
+        "name": "New Arrivals",
+        "path": "/products/new",
+        "description": "Latest products in store"
+      },
+      "bestSellers": {
+        "name": "Best Sellers",
+        "path": "/products/bestsellers",
+        "description": "Most popular items"
+      },
+      "saleItems": {
+        "name": "Sale Items",
+        "path": "/products/sale",
+        "description": "Special discounted products"
+      }
+    },
+    "pagesItems": {
+      "aboutUs": {
+        "name": "About Us",
+        "path": "/about",
+        "description": "Learn more about our company"
+      },
+      "contact": {
+        "name": "Contact",
+        "path": "/contact",
+        "description": "Get in touch with us"
+      },
+      "blog": {
+        "name": "Blogs",
+        "path": "/blogs",
+        "description": "Read our latest articles"
+      },
+      "portfolio": {
+        "name": "Portfolio",
+        "path": "/portfolio",
+        "description": "View our work gallery"
+      }
+    },
+    "authItems": {
+      "login": "Login",
+      "register": "Register",
+      "profile": "Profile",
+      "logout": "Logout",
+      "loggedOutSuccess": "Logged out successfully"
+    }
+  },
+  "footer": {
+    "brandDescription": "Premium bags crafted for everyday adventures. Quality, comfort, and style in every stitch.",
+    "services": "Services",
+    "Quick Links": "Quick Links",
+    "servicesLinks": {
+      "allRooms": "All Rooms",
+      "Blogs": "Blogs"
+    },
+    "support": "Support",
+    "Contact Information": "Contact Information",
+    "supportLinks": {
+      "aboutUs": "About Us",
+      "contact": "Contact",
+      "shippingReturns": "Shipping & Returns",
+      "faq": "FAQ"
+    },
+    "followUs": "Follow us",
+    "followUsText": "Let's connect on social",
+    "socialAlt": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "youtube": "YouTube",
+      "linkedin": "LinkedIn",
+      "tiktok": "TikTok"
+    },
+    "subscribe": "Subscribe",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "rights": " Midpoint Hotel. All rights reserved.",
+
+    "description": "Midpoint Hotel is your ideal destination for comfort, elegance, and exceptional hospitality. Located at the heart of your journey, we offer thoughtfully designed rooms, modern amenities, and personalized services that ensure every guest enjoys a relaxing and memorable stay. Whether you are traveling for business or leisure, Midpoint Hotel is where comfort meets convenience."
+  },
+  "slider": {
+    "view": "view more"
+  },
+  "contact": {
+    "headingLine1": "Reach Out To Us To",
+    "headingLine2": "Explore The World Of Laxury",
+    "subtitle": "Let us help you with everything you need. Our team is available to communicate and is committed to providing a superior experience from the very first moment.",
+    "findUsTitle": "Find Us Here",
+    "address": "No: 58 A, East Madison Street,",
+    "mailUsTitle": "Mail Us",
+    "email": "info@example.com",
+    "contactUsTitle": "Contact Us",
+    "phone": "000 – 123 – 456789",
+    "websiteTitle": "Our Website",
+    "website": "www.example.com",
+    "title": "Contact Us",
+    "home": "Home",
+    "form": {
+      "title": "Get In Touch",
+      "subtitle": "Send us a message and we'll respond as soon as possible",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "message": "Message",
+      "messagePlaceholder": "Enter your message here...",
+      "honeypotLabel": "Website (leave empty)",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "invalidSubmission": "Invalid submission detected.",
+      "successToast": "Message sent successfully! We will get back to you soon.",
+      "errorToast": "Failed to send message. Please try again later.",
+      "thanksTitle": "Thank You!",
+      "thanksBody": "We have received your message and will get back to you soon."
+    }
+  },
+  "social": {
+    "Connect with us on your favorite platform": "Connect with us on your favorite platform",
+    "Scan to connect": "Scan to connect"
+  },
+  "leadMagnet": {
+    "labelEmail": "Email Address",
+    "placeholderEmail": "Enter your email address",
+    "buttonSubmit": "Submit",
+    "buttonSending": "Sending...",
+    "successMessage": "Thank you! Your email has been submitted successfully.",
+    "errorValidation": "Please fill in all required fields correctly.",
+    "errorGeneral": "Something went wrong. Please try again later.",
+    "errorEmailRequired": "Email address is required",
+    "errorEmailInvalid": "Please enter a valid email address"
+  },
+  "megaMenu": {
+    "sections": {
+      "courses": "Courses",
+      "pms": "PMS",
+      "iotBusiness": "IoT Business"
+    },
+    "items": {
+      "home": "Home",
+      "services": "Services",
+      "blogs": "Blogs",
+      "about": "About Us",
+      "contact": "Contact Us",
+      "solutions": "Solutions",
+      "courses": "Courses",
+      "pricing": "Pricing",
+      "blog": "Blog",
+      "clientsPartners": "Clients & Partners",
+      "client": "Clients"
+    },
+    "trigger": "All WeMisc"
+  },
+  "services": {
+    "digitalMarketing": {
+      "title": "Digital Marketing",
+      "feature1": "Social media management (Facebook, Instagram, TikTok, LinkedIn)",
+      "feature2": "Paid advertising (Google Ads, Meta Ads)",
+      "feature3": "Campaign planning and performance tracking",
+      "feature4": "Analytics and reporting"
+    },
+    "contentMarketing": {
+      "title": "Content Marketing",
+      "feature1": "Copywriting",
+      "feature2": "Blog and article writing",
+      "feature3": "Video scripts",
+      "feature4": "Email marketing campaigns"
+    },
+    "branding": {
+      "title": "Branding & Brand Identity",
+      "feature1": "Logo design",
+      "feature2": "Brand identity (colors, fonts, tone of voice)",
+      "feature3": "Brand guidelines",
+      "feature4": "Naming and slogan creation"
+    },
+    "graphicDesign": {
+      "title": "Graphic Design",
+      "feature1": "Social media designs",
+      "feature2": "Advertising creatives",
+      "feature3": "Flyers, brochures, banners",
+      "feature4": "Visual assets for websites and apps"
+    },
+    "webDesign": {
+      "title": "Web Design & Development",
+      "feature1": "Business websites",
+      "feature2": "Landing pages for campaigns",
+      "feature3": "UX/UI design"
+    },
+    "seo": {
+      "title": "Search Engine Optimization (SEO)",
+      "feature1": "Keyword research",
+      "feature2": "On-page and off-page SEO",
+      "feature3": "Website optimization",
+      "feature4": "Technical SEO"
+    },
+    "influencerMarketing": {
+      "title": "Influencer Marketing",
+      "feature1": "Influencer selection",
+      "feature2": "Campaign management",
+      "feature3": "Performance tracking"
+    },
+    "offlineMarketing": {
+      "title": "Offline Marketing",
+      "feature1": "Printed ads and materials",
+      "feature2": "Outdoor advertising",
+      "feature3": "Event marketing"
+    },
+    "marketingStrategy": {
+      "title": "Marketing Strategy & Consulting",
+      "feature1": "Marketing strategy planning",
+      "feature2": "Market and competitor analysis",
+      "feature3": "Target audience research"
+    }
+  },
+  "section": {
+    "subtitle": "Why Choose Us",
+    "title": "We Drive Results That Matter",
+    "description": "Our proven methodology combines creativity with data-driven strategies to deliver exceptional results for your business. We believe in building partnerships, not just client lists."
+  },
+  "badge": {
+    "title": "Proven Results",
+    "subtitle": "98% Client Satisfaction Rate"
+  },
+  "features": {
+    "expertTeam": {
+      "title": "Expert Team",
+      "description": "Experienced professionals dedicated to your success with proven track records. We bring top-tier talent to every project."
+    },
+    "customizedSolutions": {
+      "title": "Customized Solutions",
+      "description": "Tailored strategies that align with your unique business goals and challenges. No cookie-cutter approaches here."
+    },
+    "transparentReporting": {
+      "title": "Transparent Reporting",
+      "description": "Clear, detailed reports that show exactly how your investment is performing. Complete visibility, always."
+    }
+  },
+  "servicesWork": {
+    "How We": "How We ",
+    "Work": "Work",
+
+    "Step": "Step ",
+
+    "Discovery": "Deep discovery call to understand your business, goals, competitors, and current marketing challenges.",
+
+    "Audience": "Identify and segment your ideal audience, decision-makers, and buying intent to ensure precise targeting.",
+
+    "Offer": "Craft a compelling offer and value proposition that resonates with your audience and drives engagement.",
+
+    "Content": "Create high-converting messaging, creatives, and outreach content tailored to your brand voice.",
+
+    "Setup": "Set up tracking, funnels, inboxes, lead lists, and campaign infrastructure for maximum performance.",
+
+    "LaunchOptimize": "Launch campaigns, monitor performance closely, and continuously optimize for better results.",
+
+    "Leads": "Generate warm, qualified leads and route them directly into your sales pipeline.",
+
+    "Scale": "Analyze data, improve performance, and scale winning campaigns for consistent growth."
+  },
+  "twilightRooftop": {
+    "title": "Twilight at the Rooftop Restaurant",
+    "description": "A view from a elegantly set table inside a modern rooftop restaurant, looking out through floor-to-ceiling windows at a city skyline under a soft, dusk sky. The foreground table with white linen, plates, and glasses is sharply in focus, while the chairs and panoramic view are softly blurred."
+  },
+  "challengesSection": {
+    "title": "Hospitality",
+    "highlight": "Challenges?"
+  },
+  "challenges": {
+    "1": {
+      "title": "Low Occupancy Rates During Off-Season?",
+      "description": "Many hotels struggle to maintain steady bookings outside peak seasons, impacting revenue and stability."
+    },
+    "2": {
+      "title": "Guests Don’t Return After Their First Stay",
+      "description": "Without a memorable experience, guests are unlikely to book again or recommend your hotel."
+    },
+    "3": {
+      "title": "Online Reviews Don’t Reflect Your True Quality",
+      "description": "A few negative reviews can overshadow great service and reduce trust from potential guests."
+    },
+    "4": {
+      "title": "Maintaining Consistent Service Standards",
+      "description": "Cleanliness, comfort, and service quality must be consistent across all rooms and stays."
+    },
+    "5": {
+      "title": "Serving International Guests Effectively",
+      "description": "Language barriers and cultural differences can affect guest satisfaction and communication."
+    },
+    "6": {
+      "title": "No Clear Insight Into Guest Behavior",
+      "description": "Without proper data and feedback, it’s hard to improve services and optimize guest experience."
+    }
+  },
+  "terms": {
+    "introductionTitle": "Introduction",
+    "introductionText": "Welcome to our website. By accessing or using our services, you agree to the following terms and conditions. Please read them carefully before proceeding.",
+
+    "policyTitle": "Terms & Policy",
+    "policyParagraphs": [
+      "We collect and use personal data only to provide and improve our services. Your privacy is important to us, and we take all necessary steps to protect your information.",
+      "By using our website, you consent to our data collection and usage practices as outlined in this policy.",
+      "We may update these terms from time to time. Continued use of our site after such updates constitutes your acceptance of the revised terms."
+    ],
+
+    "contactTitle": "Contact",
+    "contactStop": "If you have questions about these terms or wish to stop using our services, please contact us at: support@wemisc.net.",
+    "contactRefund": "For refund inquiries or other concerns, please review our refund policy or reach out directly to our customer support team."
+  },
+  "privacy": {
+    "title": "Privacy and Data Protection"
+  },
+  "staticSection2": {
+    "badge": "The Kingdom Jewel",
+    "hotelName": "MidPoint",
+    "luxury": "Luxury",
+    "hotel": "Hotel",
+    "description": "Experience unmatched elegance where refined design meets exceptional hospitality. At MidPoint Luxury Hotel, every detail is crafted to offer you a world of comfort, privacy, and timeless sophistication.",
+    "descriptionHighlight": "An elevated stay designed for those who appreciate true luxury.",
+    "cta": "Secure Your Stay",
+    "premiumTitle": "Premium Experience",
+    "premiumSubtitle": "5-Star Rating",
+    "availability": "Available Now"
+  },
+  "gym": {
+    "title": "Fitness & Wellness",
+    "description": "Stay active during your stay with our fully equipped gym, professional trainers, and relaxing wellness programs."
+  },
+  "ViewRooms": "View Rooms",
+
+  "rooms": {
+    "series": {
+      "luxury": "Luxury Series",
+      "suite": "Suite Collection",
+      "pinnacle": "Pinnacle Collection"
+    },
+    "pageTag": "Curated Living",
+    "pageTitle": "Luxury Room Collection",
+    "pageDescription": "Experience the pinnacle of refined living in our carefully curated suites. Every space is designed with uncompromising attention to detail, blending modern innovation with timeless comfort.",
+    "premium": {
+      "title": "Premium Luxury Room",
+      "description": "Sophisticated urban sanctuary with floor-to-ceiling windows offering breathtaking city skyline views.",
+      "feature": "City Views"
+    },
+    "junior": {
+      "title": "Junior Luxury Suite",
+      "description": "An expansive suite featuring a private balcony and a separate living area, perfect for extended stays.",
+      "feature": "Private Balcony"
+    },
+    "executive": {
+      "title": "Executive Suite",
+      "description": "The crown jewel of LUXE. Featuring a private lounge, panoramic views, and 24/7 butler service.",
+      "feature": "Private Lounge"
+    }
+  },
+  "amenities": {
+    "fastWifi": "Fast Wifi",
+    "kingBed": "King Bed",
+    "jacuzzi": "Jacuzzi",
+    "smartRoom": "Smart Room",
+    "freeWifi": "Free Wifi",
+    "miniBar": "Mini Bar",
+    "nespresso": "Nespresso",
+    "climate": "Climate",
+    "butler": "Butler",
+    "kitchenette": "Kitchenette",
+    "mediaRoom": "Media Room",
+    "smartTech": "Smart Tech"
+  },
+  "common": {
+    "bookNow": "Book Now",
+    "viewDetails": "View Details"
+  },
+  "facilities": {
+    "title": "Rooms Facilities",
+    "airConditioning": "Air Conditioning",
+    "safeDepositBox": "Safe Deposit Box",
+    "telephone": "Telephone",
+    "lcdTv": "LCD TV",
+    "miniBar": "Mini Bar",
+    "roomService": "24/7 Room Service",
+    "laundryService": "Laundry Service",
+    "wheelchairAccess": "Wheelchair Access",
+    "nonSmokingRooms": "Non-Smoking Rooms",
+    "kettleNespresso": "Kettle and Nespresso Machine",
+    "weightScale": "Weight Scale",
+    "ironBoard": "Iron and ironing board",
+    "uponRequest": "Upon request"
+  },
+  "hotelFacilities": {
+    "title": "Hotel Facilities",
+    "secretarial": "Secretarial Services",
+    "meetGreet": "Meet and Greet",
+    "tourOffice": "Tour Office",
+    "airlineOffice": "Airline Office",
+    "transportation": "Transportation",
+    "rentCar": "Rent a Car",
+    "souvenirShop": "Souvenir Shop",
+    "outdoorPool": "Outdoor Pool",
+    "healthClub": "Health Club",
+    "businessCenter": "Business Center",
+    "coffeeShop": "Coffee Shop",
+    "restaurants": "Restaurants",
+    "bar": "Bar",
+    "meetingRooms": "Meeting Rooms"
+  },
+  "amenitiesIntro": {
+    "subtitle": "Curated Comfort",
+    "title": "Exceptional Amenities",
+    "description": "Discover a world of thoughtfully designed amenities created to elevate every moment of your stay. From refined services to premium facilities, each detail is carefully curated to offer seamless comfort, effortless convenience, and an atmosphere of understated luxury."
+  },
+  "aboutIntro": {
+    "subtitle": "Our Story",
+    "title": "A Legacy of Refined Hospitality",
+    "description": "Discover the story behind our passion for exceptional hospitality. Rooted in thoughtful design and genuine care, our philosophy blends timeless elegance with modern comfort to create experiences that feel personal, memorable, and effortlessly refined."
+  },
+  "aboutSection": {
+    "badge": "About Our Sanctuary",
+    "hotelName": "MidPoint",
+    "hotelHighlight": "Hotel",
+
+    "paragraphOne": "At MidPoint Hotel, we bridge the gap between timeless elegance and modern comfort. Located at the heart of the city, our sanctuary offers a curated experience designed for the discerning traveler who seeks both inspiration and relaxation.",
+
+    "paragraphTwo": "Every detail, from our hand-picked artworks to our signature concierge service, is crafted to ensure your stay is more than just a visit—it's a lasting memory of sophistication and warmth.",
+
+    "teamTitle": "The Executive Team",
+    "teamSubtitle": "Crafting Excellence Daily"
+  }
+}

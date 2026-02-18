@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import "tailwindcss";
+@theme {
+  --color-primary: white;
+  --color-secondary: #5a0b0b;
+  --color-third: #91897c;
+  /* --color-third: #BB8632; */
+  --color-green: #2b1a1a;
+  --accent-glow: rgba(21, 18, 64, 0.1);
+  --animate-gradient-x: gradient-x 2s ease-in infinite;
+  --animate-float: float 4s ease-in-out infinite;
+  --font-montserrat: "Montserrat", sans-serif;
+  @keyframes gradient-x {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
+.abstract-wave {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear infinite;
+}
+button {
+  cursor: pointer;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+.no-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+*::selection {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+
+}
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--color-secondary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    var(--color-green),
+    var(--color-secondary),
+    var(--color-green)
+  );
+  border-radius: 10px;
+}
+.orb-gradient {
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(240, 240, 250, 0.8) 20%,
+    rgba(21, 18, 64, 0.05) 60%,
+    rgba(21, 18, 64, 0.1) 100%
+  );
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow:
+    inset 0 0 20px rgba(255, 255, 255, 0.8),
+    0 10px 40px rgba(21, 18, 64, 0.15);
+}
+.swiper-pagination-bullet {
+  width: 20px !important;
+  border-radius: 20px !important;
+  transition: all 500ms ease-in-out !important;
+  background-color: var(--color-primary) !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary) !important;
+  width: 50px !important;
+  border-radius: 20px !important;
+}
+.rounded-hero-organic {
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+.rounded-hero-organic-alt {
+  border-radius: 60% 40% 30% 70% / 50% 60% 40% 60%;
+}
+
+.facilities-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+.dot-pattern {
+  background-image: radial-gradient(circle,  var(--color-third) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
