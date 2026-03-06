@@ -1,10 +1,10 @@
 import { useState } from "react";
- 
+import placeholderImg from "../assets/logo.webp";
 const AppImage = ({
   src,
   alt = "",
   className = "",
-  placeholder = "../assets/logo.webp",
+  placeholder = placeholderImg,
   ...props
 }) => {
   const [loaded, setLoaded] = useState(false);
