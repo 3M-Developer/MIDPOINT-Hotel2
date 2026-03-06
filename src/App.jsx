@@ -10,8 +10,6 @@ import MainRooms from "./Pages/Rooms/MainRooms";
 import RoomsDetails from "./Pages/RoomsDetails/RoomsDetails";
 import { Helmet } from "react-helmet";
 import { SettingsContext } from "./Context/SettingsContext";
-import MainBLogs from "./Pages/BLogs/MainBLogs";
-import BlogDetails from "./Pages/BlogDetails/BlogDetails";
 import Social from "./Pages/Social/Social";
 import "swiper/css/pagination";
 import NotFound from "./Pages/NotFound/NotFound";
@@ -66,8 +64,6 @@ function App() {
 
   return (
     <>
-    
-
       <RouterProvider router={router} />
     </>
   );
