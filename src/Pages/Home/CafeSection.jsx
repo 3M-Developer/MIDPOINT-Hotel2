@@ -26,7 +26,7 @@ const CafeSection = () => {
     <>
       <section className="lg:h-150 pb-15 lg:pb-0 mx-4 rounded-2xl lg:rounded-2xl mb-10 relative bg-linear-to-r from-secondary via-black to-secondary  flex  text-primary bg-fill">
         <motion.div
-          className="   grid lg:grid-cols-2 justify-center items-center    text-center bg-cover"
+          className="  h-200 lg:h-auto grid lg:grid-cols-2 justify-center items-center    text-center bg-cover"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
