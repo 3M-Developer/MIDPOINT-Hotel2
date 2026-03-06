@@ -16,7 +16,7 @@ import AppImage from "./../../Components/AppImage";
 import { MdBolt } from "react-icons/md";
 import { Link } from "react-router-dom";
 // import effect from "../../assets/effect-1.png";
-
+import herobg from "../../assets/heroVideos/HomeHero-compressed.mp4"
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import slider from "./Slider";
 
@@ -30,8 +30,7 @@ const HeroSection = () => {
   const { currency, siteName_ar, siteName_en, favicon } =
     useContext(SettingsContext);
 
-  const { baseUrl, XApiKey, XTenantID, defaultLang } =
-    useContext(ApiAuthContext);
+  const { defaultLang } = useContext(ApiAuthContext);
 
   const lang = i18n.language;
 
@@ -92,18 +91,39 @@ const HeroSection = () => {
       </Helmet>
 
       <motion.div
-        className="bg-green  relative  min-h-screen  min-h-screen h-screen   w-full"
+        className="bg-green  relative  min-h-[200px]  h-screen   w-full"
         variants={sectionVariants}
         initial="hidden"
         animate="visible"
       >
+        <div className="absolute inset-0 pointer-events-none  ">
+          <video
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700  "
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src={herobg} type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 ltr:bg-linear-to-r rtl:bg-linear-to-l from-hero" />
+ 
+          <div
+            className="absolute inset-0 opacity-20"
+            style={{
+              backgroundImage:
+                "radial-gradient(#ffffff 0.5px, transparent 0.5px)",
+              backgroundSize: "40px 40px",
+            }}
+          />
+        </div>
         <div
-          style={{ backgroundImage: `url(${slider[0].banner_en})` }}
+            
           className="relative bg-cover min-h-full flex   items-center justify-center px-6"
         >
           {/* Background Effects */}
           <motion.div
-            className="absolute flex justify-center items-center bg-black/50 inset-0 overflow-hidden  "
+            className="absolute flex justify-center items-center bg-black/30 inset-0 overflow-hidden  "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2 }}
@@ -129,7 +149,7 @@ const HeroSection = () => {
                 variants={fadeUp}
                 className="relative    z-9999999999999 space-y-4 mx-4 lg:mx-25 px-3 py-5 rounded-3xl   "
               >
-                <h2 className=" font-montserrat text-[70px] tracking-[0.3em] leading-20 line-he text-shadow-2xs text-shadow-primary text-primary  ">
+                <h2 className=" font-montserrat text-2xl lg:text-[70px] tracking-[0.3em] leading-20 line-he text-shadow-2xs text-shadow-primary text-primary  ">
                   {
                     (
                       slider[0][`title_${lang}`] ??
@@ -154,7 +174,10 @@ const HeroSection = () => {
                 </p>
               </motion.div>
               <div className="flex flex-wrap gap-8  ">
-                <Link to='/rooms'  className="group relative px-10 py-5 bg-primary/20 backdrop-blur-lg   text-primary   hover:text-green rounded-full font-bold overflow-hidden transition-all  duration-800">
+                <Link
+                  to="/rooms"
+                  className="group relative px-10 py-5 bg-primary/20 backdrop-blur-lg   text-primary   hover:text-green rounded-full font-bold overflow-hidden transition-all  duration-800"
+                >
                   <span className="relative z-10 uppercase tracking-widest text-sm">
                     {t("ViewRooms")}
                   </span>

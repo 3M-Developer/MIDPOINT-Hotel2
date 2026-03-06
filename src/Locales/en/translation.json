@@ -12,6 +12,7 @@
       "about": "About",
       "pages": "Pages",
       "amenities": "Amenities",
+      "gallrey": "Gallrey",
       "account": "Account",
       "loginRegister": "Login/Register"
     },
@@ -102,12 +103,12 @@
     },
     "subscribe": "Subscribe",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
+    "terms": "Terms and conditions",
     "addressLabel": "Address",
     "phoneLabel": "Phone",
     "rights": " Midpoint Hotel. All rights reserved.",
 
-    "description": "Midpoint Hotel is your ideal destination for comfort, elegance, and exceptional hospitality. Located at the heart of your journey, we offer thoughtfully designed rooms, modern amenities, and personalized services that ensure every guest enjoys a relaxing and memorable stay. Whether you are traveling for business or leisure, Midpoint Hotel is where comfort meets convenience."
+    "description": "Midpoint Hotel offers elegant rooms, modern amenities, and personalized service for a comfortable and memorable stay, whether for business or leisure."
   },
   "slider": {
     "view": "view more"
@@ -290,7 +291,7 @@
     "Scale": "Analyze data, improve performance, and scale winning campaigns for consistent growth."
   },
   "twilightRooftop": {
-    "title": "Twilight at the Rooftop Restaurant",
+    "title": "Twilight at MIDPOINT Restaurant",
     "description": "A view from a elegantly set table inside a modern rooftop restaurant, looking out through floor-to-ceiling windows at a city skyline under a soft, dusk sky. The foreground table with white linen, plates, and glasses is sharply in focus, while the chairs and panoramic view are softly blurred."
   },
   "challengesSection": {
@@ -325,21 +326,22 @@
   },
   "terms": {
     "introductionTitle": "Introduction",
-    "introductionText": "Welcome to our website. By accessing or using our services, you agree to the following terms and conditions. Please read them carefully before proceeding.",
+    "introductionText": "Welcome to MIDPOINT Hotel – Abha website. By accessing or using our services, including bookings and reservations, you agree to the following terms and conditions. Please read them carefully before proceeding.",
 
-    "policyTitle": "Terms & Policy",
+    "policyTitle": "Terms & Conditions",
     "policyParagraphs": [
-      "We collect and use personal data only to provide and improve our services. Your privacy is important to us, and we take all necessary steps to protect your information.",
-      "By using our website, you consent to our data collection and usage practices as outlined in this policy.",
-      "We may update these terms from time to time. Continued use of our site after such updates constitutes your acceptance of the revised terms."
+      "We collect and use personal data only to provide and improve our hotel services. Your privacy is important to us, and we take all necessary steps to protect your information.",
+      "By using our website or making a booking, you consent to our data collection and usage practices as outlined in this policy.",
+      "We may update these terms from time to time. Continued use of our site or services after such updates constitutes your acceptance of the revised terms."
     ],
 
     "contactTitle": "Contact",
-    "contactStop": "If you have questions about these terms or wish to stop using our services, please contact us at: support@wemisc.net.",
+    "contactStop": "If you have questions about these terms or wish to stop using our services, please contact us at: Info@midpointhotel.sa",
     "contactRefund": "For refund inquiries or other concerns, please review our refund policy or reach out directly to our customer support team."
   },
+
   "privacy": {
-    "title": "Privacy and Data Protection"
+    "title": "Privacy Policy"
   },
   "staticSection2": {
     "badge": "The Kingdom Jewel",
@@ -350,7 +352,7 @@
     "descriptionHighlight": "An elevated stay designed for those who appreciate true luxury.",
     "cta": "Secure Your Stay",
     "premiumTitle": "Premium Experience",
-    "premiumSubtitle": "5-Star Rating",
+    "premiumSubtitle": "4-Star Rating",
     "availability": "Available Now"
   },
   "gym": {
@@ -456,5 +458,19 @@
 
     "teamTitle": "The Executive Team",
     "teamSubtitle": "Crafting Excellence Daily"
+  },
+  "gallery": {
+    "pageTag": "Explore",
+    "pageTitle": "  The Art of Hospitality",
+    "pageDescription": "Browse through moments that embody sophistication and warmth. Each photograph highlights the atmosphere, craftsmanship, and refined comfort that make Midpoint exceptional."
+  },
+  "cafeSection": {
+    "title": "  Café Experience",
+    "description": "Discover a refined café experience at UPROOF, where artisanal flavors meet a contemporary atmosphere. From expertly crafted coffee to indulgent signature creations, every detail is designed to elevate your moments within the elegance of Midpoint.",
+    "seeMenu": "Explore Menu"
+  },
+  "Conference": {
+    "title": " Al Hezam Conference Hall",
+    "description": " We are in the business of exceeding expectations, we give you exactly what you want, and those special extras that you would never expect, to create something extraordinary. Whenever you have large or small meetings, Midpoint Hotel Meetings and Events facility offers great flexibility, nearly all of our venues can be configured to our client’s needs – theatre – style – Boardroom U – Shaped – with fully – equipped luxurious executive boardroom with unrivaled tastefully wonderful decorated atmosphere room surroundings and luxury conference rooms"
   }
 }

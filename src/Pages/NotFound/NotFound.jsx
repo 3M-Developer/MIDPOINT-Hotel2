@@ -30,17 +30,12 @@ const NotFound = () => {
             <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-4">
               <Link
                 to="/"
-                className="flex  items-center justify-center gap-2 rounded-lg h-12 px-6 bg-third text-primary hover:bg-primary hover:text-third transition-all shadow-lg shadow-secondary/20  font-bold"
+                className="flex  items-center justify-center gap-2 rounded-lg h-12 px-6 bg-secondary text-primary hover:bg-secondary/10 hover:text-third transition-all shadow-lg shadow-secondary/20  font-bold"
               >
                 <span className="  text-sm"><IoHome size={20} /></span>
                 <span>Go to Home Page</span>
               </Link>
-              <Link
-                to="/contact"
-                className="flex items-center justify-center gap-2 rounded-lg h-12 px-6 hover:bg-third hover:text-primary  border border-third       transition-colors text-base font-bold"
-              >
-                <span>Contact Us</span>
-              </Link>
+              
             </div>
           </div>
           {/* Visual Side */}
