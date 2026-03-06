@@ -21,6 +21,7 @@ export default function SettingsContextProvider({ children }) {
   const [darkSecondaryColor, setDarkSecondaryColor] = useState("");
   const [facebookLink, setFacebookLink] = useState("");
   const [instagramLink, setInstagramLink] = useState("");
+  const [snapchatLink, setSnapchatLink] = useState("");
   const [linkedinLink, setLinkedinLink] = useState("");
   const [twitterLink, setTwitterLink] = useState("");
   const [youtubeLink, setYoutubeLink] = useState("");
@@ -51,11 +52,12 @@ export default function SettingsContextProvider({ children }) {
     // setFooterLogo(data.main_logo_light);
     // setFavicon(data.favicon);
     // setFacebookLink(data.facebook);
-    // setInstagramLink(data.instagram);
+    setInstagramLink("https://www.instagram.com/midpoint377");
+    setSnapchatLink("https://www.snapchat.com/add/mid_point26");
     //   setLinkedinLink(data.linkedin);
-    // setTwitterLink(data.twitter);
+    setTwitterLink("https://x.com/midpoint363");
     //   setYoutubeLink(data.youtube);
-    //   setTiktokLink(data.tiktok);
+    setTiktokLink("https://www.tiktok.com/@midpoint01");
 
     //   setEnableDarkMode(data.enable_dark_mode);
   }, []);
@@ -78,6 +80,7 @@ export default function SettingsContextProvider({ children }) {
         facebookLink,
         instagramLink,
         linkedinLink,
+        snapchatLink,
         twitterLink,
         youtubeLink,
         tiktokLink,

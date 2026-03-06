@@ -10,35 +10,27 @@ export default function PrivacyPolicy() {
   const lang = i18n.language;
 
   const { currency, siteName_ar, siteName_en } = useContext(SettingsContext);
-  const policyParagraphs_en = [
-    "wemisc respects your privacy and is committed to protecting your personal information. Our Privacy Policy outlines how we collect, use, and safeguard your data when you use the Service. By using the Service, you consent to the collection and use of your personal data as described in the Privacy Policy.",
-    "If you use the Service to process data on behalf of others (e.g., tenants or clients), you are responsible for complying with applicable data protection laws, including securing necessary consents and ensuring lawful processing of personal data.",
-    'The Service is provided "as is" and "as available," without any warranties or guarantees. wemisc does not warrant that the Service will meet your requirements, be uninterrupted, secure, or free of errors.',
-    "To the fullest extent permitted by law, wemisc disclaims all liability for any damages arising from:",
-    "• Your use or inability to use the Service.",
-    "• Errors, omissions, or inaccuracies in the content provided through the Service.",
-    "• Any third-party interactions, including tenant or vendor disputes.",
-    "In no event shall wemisc total liability exceed the amount you paid for the Service in the last 12 months.",
-    "You agree to indemnify, defend, and hold harmless wemisc, its affiliates, employees, agents, and partners from any claims, losses, damages, liabilities, and expenses (including legal fees) arising out of:",
-    "• Your violation of these Terms.",
-    "• Your use of the Service in an unlawful manner.",
-    "• Any content you submit to the Service.",
-  ];
-  const policyParagraphs_ar = [
-    "تحترم شركة wemisc خصوصيتك وتلتزم بحماية معلوماتك الشخصية. توضح سياسة الخصوصية الخاصة بنا كيفية جمع بياناتك واستخدامها وحمايتها عند استخدامك للخدمة. وباستخدامك للخدمة، فإنك توافق على جمع واستخدام بياناتك الشخصية كما هو موضح في سياسة الخصوصية.",
-    "في حال استخدامك للخدمة لمعالجة بيانات نيابةً عن أطراف أخرى (مثل المستأجرين أو العملاء)، فأنت تتحمل مسؤولية الامتثال لقوانين حماية البيانات المعمول بها، بما في ذلك الحصول على الموافقات اللازمة وضمان المعالجة القانونية للبيانات الشخصية.",
-    'يتم تقديم الخدمة "كما هي" و"حسب توفرها"، دون أي ضمانات أو تعهدات. ولا تضمن wemisc أن تلبي الخدمة متطلباتك أو أن تكون دون انقطاع أو آمنة أو خالية من الأخطاء.',
-    "إلى أقصى حد يسمح به القانون، تخلي wemisc مسؤوليتها عن أي أضرار ناتجة عن:",
-    "• استخدامك للخدمة أو عدم قدرتك على استخدامها.",
-    "• أي أخطاء أو سهو أو معلومات غير دقيقة في المحتوى المقدم من خلال الخدمة.",
-    "• أي تعاملات مع أطراف ثالثة، بما في ذلك النزاعات مع المستأجرين أو الموردين.",
-    "في جميع الأحوال، لن تتجاوز المسؤولية الإجمالية لشركة wemisc المبلغ الذي قمت بدفعه مقابل الخدمة خلال آخر 12 شهرًا.",
-    "أنت توافق على تعويض wemisc والدفاع عنها وإبرائها من أي مطالبات أو خسائر أو أضرار أو مسؤوليات أو نفقات (بما في ذلك أتعاب المحاماة) تنشأ عن:",
-    "• مخالفتك لهذه الشروط.",
-    "• استخدامك للخدمة بطريقة غير قانونية.",
-    "• أي محتوى تقوم بإرساله أو رفعه إلى الخدمة.",
-  ];
+ const policyParagraphs_en = [
+  "At MIDPOINT Hotel – Abha, we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you interact with our services.",
+  "We may collect the following information: personal details (name, email, phone number, address), booking information (dates of stay, room preferences), payment information (processed securely via trusted payment providers), and usage data (website interactions, cookies, analytics).",
+  "Your data is used to provide and manage your bookings, improve our services, send promotional offers if you have opted in, and comply with legal and regulatory requirements.",
+  "We do not sell your personal information. Your data may be shared with authorized service providers (payment processors, IT providers) or government authorities if legally required.",
+  "Our website may use cookies and similar technologies to enhance user experience and analyze traffic.",
+  "We implement industry-standard security measures to protect your personal information.",
+  "You have the right to access your personal data, request correction or deletion of your data, and opt out of marketing communications.",
+  "For questions about your privacy or to exercise your rights, contact us at: Info@midpointhotel.sa or +9668004300070"
+];
 
+const policyParagraphs_ar = [
+  "في فندق MIDPOINT – أبها، نحترم خصوصيتك وملتزمون بحماية معلوماتك الشخصية. توضح هذه السياسة كيفية جمع معلوماتك واستخدامها وحمايتها عند التفاعل مع خدماتنا.",
+  "قد نجمع المعلومات التالية: البيانات الشخصية (الاسم، البريد الإلكتروني، رقم الهاتف، العنوان)، معلومات الحجز (تاريخ الإقامة، تفضيلات الغرفة)، معلومات الدفع (تتم معالجتها بأمان عبر مزودي الدفع الموثوقين)، وبيانات الاستخدام (تفاعل الموقع، ملفات تعريف الارتباط، التحليلات).",
+  "تُستخدم بياناتك لتقديم وإدارة الحجوزات والإقامات، تحسين خدماتنا، إرسال عروض ترويجية إذا قمت بالموافقة، والامتثال للمتطلبات القانونية والتنظيمية.",
+  "لا نبيع معلوماتك الشخصية. قد نشارك بياناتك مع مزودي خدمات مرخصين (معالجات الدفع، مزودو التقنية) أو السلطات الحكومية إذا تطلب القانون ذلك.",
+  "قد يستخدم موقعنا ملفات تعريف الارتباط وتقنيات مشابهة لتعزيز تجربة المستخدم وتحليل حركة المرور.",
+  "نطبق معايير أمان صناعية لحماية معلوماتك الشخصية.",
+  "لديك الحق في الوصول إلى بياناتك الشخصية، طلب تصحيح أو حذف بياناتك، ورفض استلام الرسائل التسويقية.",
+  "للاستفسارات حول الخصوصية أو لممارسة حقوقك، تواصل معنا على: Info@midpointhotel.sa  او +9668004300070"
+];
   return (
     <>
       <Helmet>

@@ -4,9 +4,12 @@ import HeroSection from "./HeroSection";
 import { StaticSection } from "./StaticSection";
 
 import Challenges from "./Challenges";
-import StaticSection2 from './StaticSection2';
-import GymSection from './GymSection';
-import RoomFacilities from './RoomFacilities';
+import StaticSection2 from "./StaticSection2";
+import GymSection from "./GymSection";
+import RoomFacilities from "./RoomFacilities";
+import CafeSection from "./CafeSection";
+import HotelFacilities from './HotelFacilities';
+import ConferenceHallSection from './ConferenceHallSection';
 
 const MainHome = () => {
   return (
@@ -14,14 +17,14 @@ const MainHome = () => {
       <div>
         <HeroSection />
 
-
-        <StaticSection2/>
-        <GymSection/>
+        <StaticSection2 />
+        <GymSection />
         <StaticSection />
-        <RoomFacilities/>
+        <RoomFacilities />
+        <CafeSection />
+        <HotelFacilities/>
+        <ConferenceHallSection/>
         {/* <Challenges /> */}
-
-
       </div>
     </>
   );

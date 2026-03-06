@@ -24,8 +24,8 @@ import toast from "react-hot-toast";
 import { useTranslation } from "react-i18next";
 import { BiCategory } from "react-icons/bi";
 import { LuRefreshCcw } from "react-icons/lu";
-import { IoHome } from "react-icons/io5";
-import { MdMiscellaneousServices } from "react-icons/md";
+import { IoHome, IoImage } from "react-icons/io5";
+import { MdHotel, MdIron, MdMiscellaneousServices } from "react-icons/md";
 import Droplist from "./Droplist";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import mainLogo from "../assets/logoWhite.webp";
@@ -106,7 +106,7 @@ const Navbar = () => {
 
           {/* Main Navigation */}
           <div
-            className={`  transition-all duration-300 ${scrolled ? "bg-primary border-b border-third shadow-secondary backdrop-blur-2xl" : "  bg-secondary/50 py-3   backdrop-blur-md  "}`}
+            className={`  transition-all duration-300 ${scrolled ? "bg-primary border-b border-third   backdrop-blur-2xl" : "  bg-secondary/25  py-1   backdrop-blur-md  "}`}
           >
             <div className="px-10 w-full ">
               <div className="flex items-center justify-between py-2">
@@ -154,6 +154,22 @@ const Navbar = () => {
                     to="/rooms"
                   >
                     {t("navigation.menu.services")}
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `
+                    flex items-center justify-center
+                    transition-all
+                    rounded-full
+                    text-center
+                    duration-300
+                    ease-in-out
+                    ${isActive ? ` border-s-4 border-e-4 border-primary h-12.5 w-35   flex items-center justify-center rounded-full ${scrolled ? "text-secondary border-secondary" : "text-primary border-primary"}` : `  font-medium transition-colors ${scrolled ? "text-secondary border-secondary" : "text-primary border-primary"}`}
+                  `
+                    }
+                    to="/gallery"
+                  >
+                    {t("navigation.menu.gallrey")}
                   </NavLink>
 
                   <NavLink
@@ -311,12 +327,12 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/services"
+                  to="/rooms"
                   className="flex  px-4 text-third font-bold hover:bg-white/10 rounded-xl transition-colors"
                   onClick={closeSidebar}
                 >
                   <div className="flex gap-3 items-center">
-                    <MdMiscellaneousServices size={25} />
+                    <MdHotel size={25} />
                     <span className="text-baseTwo font-bold">
                       {t("navigation.menu.services")}
                     </span>
@@ -340,12 +356,20 @@ const Navbar = () => {
                   to="/amenities"
                   className="  flex gap-3   px-4 text-third hover:text-third font-bold hover:bg-white/10 rounded-xl transition-colors"
                 >
-                  <BsInfoCircleFill size={25} />
+                  <MdIron size={25} />
                   {t("navigation.menu.amenities")}
                 </Link>
               </li>
-
-              
+              <li>
+                <Link
+                  onClick={closeSidebar}
+                  to="/gallery"
+                  className="  flex gap-3   px-4 text-third hover:text-third font-bold hover:bg-white/10 rounded-xl transition-colors"
+                >
+                  <IoImage size={25} />
+                  {t("navigation.menu.gallrey")}
+                </Link>
+              </li>
             </ul>
 
             <div className="mt-3"></div>

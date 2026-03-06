@@ -14,13 +14,15 @@ import footer from "../assets/footer.webp";
 import { FaMicroblog, FaXTwitter } from "react-icons/fa6";
 // import logo from "../assets/Home/Logo_Header.jpg";
 import Subscribe from "./Subscribe";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaSnapchatSquare } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { SettingsContext } from "../Context/SettingsContext";
 import AppImage from "./AppImage";
-import { MdLocalHotel, MdMiscellaneousServices } from "react-icons/md";
+import { MdIron, MdLocalHotel, MdMiscellaneousServices } from "react-icons/md";
 import footerLogo from "../assets/logoWhite.webp";
+import { IoImage } from "react-icons/io5";
+import { HiExternalLink } from "react-icons/hi";
 const Footer = () => {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
@@ -32,6 +34,7 @@ const Footer = () => {
     youtubeLink,
     tiktokLink,
     linkedinLink,
+    snapchatLink,
     // address_en,
     // address_ar,
     footerText_en,
@@ -77,7 +80,7 @@ const Footer = () => {
             <ul className="space-y-4 text-sm ">
               <li>
                 <Link
-                  to="/services"
+                  to="/rooms"
                   className="hover:font-bold flex items-center gap-2 transition-all duration-200 group"
                 >
                   <div className="bg-secondary/50 text-primary group-hover:bg-third/50 group-hover:text-primary transition-all duration-300 flex items-center justify-center w-8 h-8 rounded-full">
@@ -102,26 +105,26 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/contact"
+                  to="/amenities"
                   className="hover:font-bold flex items-center gap-2 transition-all duration-200 group"
                 >
                   <div className="bg-secondary/50 text-primary group-hover:bg-third/50 group-hover:text-primary transition-all duration-300 flex items-center justify-center w-8 h-8 rounded-full">
-                    <FiPhone size={20} />
+                    <MdIron size={20} />
                   </div>
-                  <p className="text-xl">{t("footer.supportLinks.contact")}</p>
+                  <p className="text-xl"> {t("navigation.menu.amenities")}</p>
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link
-                  to="/blogs"
+                  to="/amenities"
                   className="hover:font-bold flex items-center gap-2 transition-all duration-200 group"
                 >
                   <div className="bg-secondary/50 text-primary group-hover:bg-third/50 group-hover:text-primary transition-all duration-300 flex items-center justify-center w-8 h-8 rounded-full">
-                    <FaMicroblog size={20} />
+                    <IoImage size={20} />
                   </div>
-                  <p className="text-xl">{t("footer.servicesLinks.Blogs")}</p>
+                  <p className="text-xl"> {t("navigation.menu.gallrey")}</p>
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
 
@@ -215,6 +218,15 @@ const Footer = () => {
                   <FiInstagram />
                 </a>
               ) : null}
+              {snapchatLink ? (
+                <a
+                  aria-label={t("footer.socialAlt.instagram")}
+                  href={snapchatLink}
+                  className="p-2 bg-green/50 rounded-md hover:bg-secondary hover:text-primary hover:font-bold transition-all duration-200"
+                >
+                  <FaSnapchatSquare />
+                </a>
+              ) : null}
 
               {twitterLink ? (
                 <a
@@ -263,6 +275,22 @@ const Footer = () => {
           <p>
             {" "}
             © {new Date().getFullYear()} {t("footer.rights")}
+          </p>
+          <p className="flex items-center gap-2 text-sm sm:text-base font-medium text-gray-500 dark:text-gray-400">
+            <span className="rtl:order-1">Designed and developed by</span>
+            <a
+              href="https://linktr.ee/Mairo12Mesak"
+              target="_blank"
+              className="flex items-center gap-1 rtl:order-0 relative group overflow-hidden"
+            >
+              <span className="relative rtl:pe-2 ltr:ps-2 rtl:order-1 z-10 group-hover:text-secondary transition-colors duration-300">
+                 Mario Mesak
+              </span>
+              <HiExternalLink className="ml-1   mx-2 text-gray-400 group-hover:text-secondary transition-transform duration-300 group-hover:translate-y-[-2px]  " />
+
+              {/* Glow effect */}
+              <span className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-20 rounded-full transition-opacity duration-500"></span>
+            </a>
           </p>
           <div className="flex gap-4">
             <Link

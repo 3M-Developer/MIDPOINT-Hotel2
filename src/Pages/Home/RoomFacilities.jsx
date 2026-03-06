@@ -8,7 +8,7 @@ export default function RoomFacilities() {
   const lang = i18n.language;
 
   return (
-    <section className="py-20 overflow-hidden ">
+    <section className="  overflow-hidden ">
       <h2 className="mx-4 text-4xl font-bold text-third text-center">
         {t("facilities.title")}
       </h2>
@@ -24,7 +24,7 @@ export default function RoomFacilities() {
           delay: 0,
           disableOnInteraction: false,
         }}
-        className="facilities-swiper  mt-10 "
+        className="facilities-swiper   "
       >
         {facilities.map((item, index) => {
           const Icon = item.icon;

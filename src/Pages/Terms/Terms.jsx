@@ -28,8 +28,8 @@ export default function Terms() {
             {/* Introduction */}
             <section id="introduction" className="mb-12">
               <div className="flex items-center gap-3 mb-6">
-                <FiFileText className="w-6 h-6" style={{ color: "#18e200" }} />
-                <h2 className="text-gray-900 !text-4xl font-semibold translate-y-1">
+                <FiFileText className="w-8 h-8"  />
+                <h2 className="text-gray-900 !text-4xl font-semibold  ">
                   {t("terms.introductionTitle")}
                 </h2>
               </div>
@@ -40,10 +40,10 @@ export default function Terms() {
             <section id="policy" className="mb-12">
               <div className="flex items-center gap-3 mb-6">
                 <IoShieldCheckmarkSharp
-                  className="w-6 h-6"
-                  style={{ color: "#18e200" }}
+                  className="w-8 h-8"
+                  
                 />
-                <h2 className="text-gray-900 !text-4xl font-semibold translate-y-1">
+                <h2 className="text-gray-900 !text-4xl font-semibold  ">
                   {t("terms.policyTitle")}
                 </h2>
               </div>
@@ -60,10 +60,10 @@ export default function Terms() {
             <section id="contact" className="mb-12">
               <div className="flex items-center gap-3 mb-6">
                 <IoShieldCheckmarkSharp
-                  className="w-6 h-6"
-                  style={{ color: "#18e200" }}
+                  className="w-8 h-8"
+                   
                 />
-                <h2 className="text-gray-900 !text-4xl font-semibold translate-y-1">
+                <h2 className="text-gray-900 text-4xl! font-semibold  ">
                   {t("terms.contactTitle")}
                 </h2>
               </div>

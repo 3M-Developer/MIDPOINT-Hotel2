@@ -87,16 +87,37 @@ body {
     inset 0 0 20px rgba(255, 255, 255, 0.8),
     0 10px 40px rgba(21, 18, 64, 0.15);
 }
-.swiper-pagination-bullet {
-  width: 20px !important;
+/* .swiper-pagination-bullet {
+  width:5px !important;
   border-radius: 20px !important;
   transition: all 500ms ease-in-out !important;
   background-color: var(--color-primary) !important;
 }
 .swiper-pagination-bullet-active {
   background-color: var(--color-primary) !important;
-  width: 50px !important;
+  width: 20px !important;
   border-radius: 20px !important;
+} */
+ .custom-bullet {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: white;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.custom-bullet.active {
+  background: black;
+  color: white;
+}
+
+.custom-bullet.more {
+  background: transparent;
+  color: white;
+  cursor: default;
 }
 .rounded-hero-organic {
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
@@ -108,7 +129,13 @@ body {
 .facilities-swiper .swiper-wrapper {
   transition-timing-function: linear !important;
 }
+
+.halls-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
 .dot-pattern {
   background-image: radial-gradient(circle,  var(--color-third) 1px, transparent 1px);
   background-size: 24px 24px;
 }
+
+

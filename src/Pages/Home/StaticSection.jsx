@@ -20,11 +20,22 @@ export const StaticSection = () => {
               <img src={logo} className="w-30 animate-float  " alt="" />
               <div className="p-5 w-full   bg-linear-to-r via-secondary/80  flex flex-col mt-5 justify-center items-center text-center  ">
                 <h3 className="text-5xl mb-6 font-extrabold">
-                   {t("twilightRooftop.title")}
+                  {t("twilightRooftop.title")}
                 </h3>
                 <p className="max-w-[700px] text-center my-3">
                   {t("twilightRooftop.description")}
                 </p>
+                <a
+                  href="https://scanned.page/p/xqG1ax"
+                  target="_blank"
+                  className="inline-block group relative px-10 py-5 bg-green   text-primary  hover:text-green rounded-full font-bold overflow-hidden transition-all  duration-800"
+                >
+                  <span className="relative z-10 uppercase tracking-widest text-sm">
+                    {t("cafeSection.seeMenu")}
+                  </span>
+
+                  <div className="absolute   bg-primary top-full left-full  w-full h-full   group-hover:inset-0 transition-all duration-800 rounded-full"></div>
+                </a>
               </div>
             </div>
           </div>

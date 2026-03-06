@@ -19,6 +19,7 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 import Terms from "./Pages/Terms/Terms";
 import Loader from "./Components/Loader";
 import MainAmenities from "./Pages/Amenities/MainAmenities";
+import MainGallery from "./Pages/Gallery/MainGallery";
 
 function App() {
   const { favicon } = useContext(SettingsContext);
@@ -50,13 +51,14 @@ function App() {
         { path: "/about", element: <MainAbout /> },
         { path: "/rooms", element: <MainRooms /> },
         { path: "/amenities", element: <MainAmenities /> },
+        { path: "/gallery", element: <MainGallery /> },
         // { path: "/contact", element: <MainContact /> },
         // { path: "/rooms/:slug", element: <RoomsDetails /> },
         // { path: "/blogs", element: <MainBLogs /> },
         // { path: "/blogs/:slug", element: <BlogDetails /> },
         // { path: "/social", element: <Social /> },
-        // { path: "/privacy-policy", element: <PrivacyPolicy /> },
-        // { path: "/terms", element: <Terms /> },
+        { path: "/privacy-policy", element: <PrivacyPolicy /> },
+        { path: "/terms", element: <Terms /> },
         { path: "*", element: <NotFound /> },
       ],
     },

@@ -3,7 +3,7 @@ import { MdToken } from "react-icons/md";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { HiRocketLaunch } from "react-icons/hi2";
 import { IoMdPlayCircle } from "react-icons/io";
-import aboutHeroImg from "../../assets/aboutHeroImg.webp";
+import aboutHeroImg from "../../assets/heroVideos/About-compressed.mp4";
 import { SettingsContext } from "../../Context/SettingsContext";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
@@ -52,6 +52,27 @@ const AboutHero = () => {
         className={`relative mb-4 h-[80vh] bg-cover bg-position-[40%,40vh]  bg-(image:--bg)  `}
         style={{ "--bg": `url(${aboutHeroImg})` }}
       >
+        <div className="absolute inset-0 pointer-events-none  ">
+          <video
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700  "
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src={aboutHeroImg} type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 ltr:bg-linear-to-r rtl:bg-linear-to-l from-hero" />
+
+          <div
+            className="absolute inset-0 opacity-20"
+            style={{
+              backgroundImage:
+                "radial-gradient(#ffffff 0.5px, transparent 0.5px)",
+              backgroundSize: "40px 40px",
+            }}
+          />
+        </div>
         <div className="absolute inset-0 flex items-center justify-center   bg-radial  from-secondary/60 ">
           <div className="     text-center  ">
             <motion.div
@@ -77,7 +98,7 @@ const AboutHero = () => {
                 variants={itemVariants}
                 className="text-5xl text-primary md:text-7xl font-black mb-6 leading-[1.1] tracking-tight"
               >
-                 {t("aboutIntro.title")}
+                {t("aboutIntro.title")}
               </motion.h3>
 
               {/* Description */}
@@ -85,7 +106,7 @@ const AboutHero = () => {
                 variants={itemVariants}
                 className="text-2xl text-primary/70   px-2 w-11/12 leading-relaxed"
               >
-                 {t("aboutIntro.description")}
+                {t("aboutIntro.description")}
               </motion.p>
             </motion.div>
           </div>
