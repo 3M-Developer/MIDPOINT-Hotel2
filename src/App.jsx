@@ -5,12 +5,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Components/Layout";
 import MainHome from "./Pages/Home/MainHome";
 import MainAbout from "./Pages/About/MainAbout";
-import MainContact from "./Pages/Contact/MainContact";
 import MainRooms from "./Pages/Rooms/MainRooms";
 import RoomsDetails from "./Pages/RoomsDetails/RoomsDetails";
 import { Helmet } from "react-helmet";
 import { SettingsContext } from "./Context/SettingsContext";
-import Social from "./Pages/Social/Social";
+
 import "swiper/css/pagination";
 import NotFound from "./Pages/NotFound/NotFound";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
@@ -50,11 +49,6 @@ function App() {
         { path: "/rooms", element: <MainRooms /> },
         { path: "/amenities", element: <MainAmenities /> },
         { path: "/gallery", element: <MainGallery /> },
-        // { path: "/contact", element: <MainContact /> },
-        // { path: "/rooms/:slug", element: <RoomsDetails /> },
-        // { path: "/blogs", element: <MainBLogs /> },
-        // { path: "/blogs/:slug", element: <BlogDetails /> },
-        // { path: "/social", element: <Social /> },
         { path: "/privacy-policy", element: <PrivacyPolicy /> },
         { path: "/terms", element: <Terms /> },
         { path: "*", element: <NotFound /> },
