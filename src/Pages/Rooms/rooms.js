@@ -14,6 +14,22 @@ const rooms = [
   {
     id: 1,
     seriesKey: "rooms.series.luxury",
+    titleKey: "rooms.standard.title",
+    descKey: "rooms.standard.description",
+    size: "45m²",
+    featureKey: "rooms.standard.feature",
+    image: room1,
+    reverse: false,
+    amenities: [
+      { icon: FaWifi, labelKey: "amenities.fastWifi" },
+      { icon: MdKingBed, labelKey: "amenities.kingBed" },
+      // { icon: FaHotTub, labelKey: "amenities.jacuzzi" },
+      { icon: MdSettingsInputComponent, labelKey: "amenities.smartRoom" },
+    ],
+  },
+  {
+    id: 2,
+    seriesKey: "rooms.series.luxury",
     titleKey: "rooms.premium.title",
     descKey: "rooms.premium.description",
     size: "45m²",
@@ -23,12 +39,12 @@ const rooms = [
     amenities: [
       { icon: FaWifi, labelKey: "amenities.fastWifi" },
       { icon: MdKingBed, labelKey: "amenities.kingBed" },
-      { icon: FaHotTub, labelKey: "amenities.jacuzzi" },
+      // { icon: FaHotTub, labelKey: "amenities.jacuzzi" },
       { icon: MdSettingsInputComponent, labelKey: "amenities.smartRoom" },
     ],
   },
   {
-    id: 2,
+    id: 3,
     seriesKey: "rooms.series.suite",
     titleKey: "rooms.junior.title",
     descKey: "rooms.junior.description",
@@ -44,7 +60,7 @@ const rooms = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     seriesKey: "rooms.series.pinnacle",
     titleKey: "rooms.executive.title",
     descKey: "rooms.executive.description",

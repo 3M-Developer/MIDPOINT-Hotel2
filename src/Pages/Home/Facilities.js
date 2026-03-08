@@ -30,10 +30,10 @@ const facilities = [
     icon: FaTv,
     titleKey: "facilities.lcdTv",
   },
-  {
-    icon: FaCocktail,
-    titleKey: "facilities.miniBar",
-  },
+  // {
+  //   icon: FaCocktail,
+  //   titleKey: "facilities.miniBar",
+  // },
   {
     icon: FaConciergeBell,
     titleKey: "facilities.roomService",
@@ -61,7 +61,7 @@ const facilities = [
   {
     icon: MdIron,
     titleKey: "facilities.ironBoard",
-    subKey: "facilities.uponRequest", // optional
+    // subKey: "facilities.uponRequest", // optional
   },
 ];
 export default facilities;
