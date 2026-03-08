@@ -370,6 +370,11 @@
     "pageTag": "Curated Living",
     "pageTitle": "Luxury Room Collection",
     "pageDescription": "Experience the pinnacle of refined living in our carefully curated suites. Every space is designed with uncompromising attention to detail, blending modern innovation with timeless comfort.",
+    "standard": {
+      "title": "Standard Luxury Room",
+      "description": "Sophisticated urban sanctuary with floor-to-ceiling windows offering breathtaking city skyline views.",
+      "feature": "City Views"
+    },
     "premium": {
       "title": "Premium Luxury Room",
       "description": "Sophisticated urban sanctuary with floor-to-ceiling windows offering breathtaking city skyline views.",

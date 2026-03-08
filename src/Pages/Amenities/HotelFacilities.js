@@ -23,17 +23,17 @@ const hotelFacilities = [
 
   { icon: FaPlane, titleKey: "hotelFacilities.airlineOffice" },
   { icon: FaBus, titleKey: "hotelFacilities.transportation" },
-  { icon: FaCar, titleKey: "hotelFacilities.rentCar" },
+  // { icon: FaCar, titleKey: "hotelFacilities.rentCar" },
 
   { icon: FaStore, titleKey: "hotelFacilities.souvenirShop" },
-  { icon: FaSwimmer, titleKey: "hotelFacilities.outdoorPool" },
+  // { icon: FaSwimmer, titleKey: "hotelFacilities.outdoorPool" },
   { icon: FaHeart, titleKey: "hotelFacilities.healthClub" },
 
   { icon: FaBriefcase, titleKey: "hotelFacilities.businessCenter" },
   { icon: FaCoffee, titleKey: "hotelFacilities.coffeeShop" },
   { icon: FaUtensils, titleKey: "hotelFacilities.restaurants" },
 
-  { icon: FaGlassMartiniAlt, titleKey: "hotelFacilities.bar" },
+  // { icon: FaGlassMartiniAlt, titleKey: "hotelFacilities.bar" },
   { icon: FaUsers, titleKey: "hotelFacilities.meetingRooms" },
 ];
 export default hotelFacilities;
