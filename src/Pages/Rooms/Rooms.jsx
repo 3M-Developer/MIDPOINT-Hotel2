@@ -86,24 +86,28 @@ const Rooms = () => {
     //     ))}
     //   </div>
     // </div>
-    <div className="pt-3 pb-24">
-      {/* Page Header */}
-     
 
-      {/* Rooms */}
-      <motion.div
-        className="space-y-20"
-        variants={containerVariants}
-        initial="hidden"
-        animate="show"
-      >
-        {rooms.map((room) => (
-          <motion.div key={room.id} variants={itemVariants}>
-            <RoomCard room={room} />
-          </motion.div>
-        ))}
-      </motion.div>
-    </div>
+    <>
+      <div className="pt-3 pb-24">
+        {/* Page Header */}
+
+        {/* Rooms */}
+        <motion.div
+          className="space-y-20"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+        >
+          {rooms.map((room) => (
+            <motion.div key={room.id} variants={itemVariants}>
+              <RoomCard room={room} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+
+      
+    </>
   );
 };
 

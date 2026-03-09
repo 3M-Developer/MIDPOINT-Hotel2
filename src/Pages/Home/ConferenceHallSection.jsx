@@ -62,12 +62,12 @@ const ConferenceHallSection = () => {
             }}
             effect={"coverflow"}
             spaceBetween={25}
-            speed={2000}
+            speed={4000}
             autoplay={{
-              delay: 0,
+              delay: 2000,
               disableOnInteraction: false,
             }}
-            className="facilities-swiper  order-0 lg:order-1 "
+            className="   order-0 lg:order-1 "
           >
             {imgs.map((item, index) => {
               return (

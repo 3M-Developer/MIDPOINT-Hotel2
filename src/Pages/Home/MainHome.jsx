@@ -10,6 +10,7 @@ import RoomFacilities from "./RoomFacilities";
 import CafeSection from "./CafeSection";
 import HotelFacilities from './HotelFacilities';
 import ConferenceHallSection from './ConferenceHallSection';
+import EventsHall from './EventsHall';
 
 const MainHome = () => {
   return (
@@ -19,6 +20,7 @@ const MainHome = () => {
 
         <StaticSection2 />
         <GymSection />
+        <EventsHall/>
         <StaticSection />
         <RoomFacilities />
         <CafeSection />

@@ -19,12 +19,12 @@ export default function RoomFacilities() {
         loop={true}
         slidesPerView="auto"
         spaceBetween={25}
-        speed={2000}
+        speed={4000}
         autoplay={{
-          delay: 0,
+          delay: 700,
           disableOnInteraction: false,
         }}
-        className="facilities-swiper   "
+        className="    "
       >
         {facilities.map((item, index) => {
           const Icon = item.icon;

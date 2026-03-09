@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import img1 from "../../assets/static2 1.webp";
 import img2 from "../../assets/static2 2.webp";
 import { FaStar } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { TbBrandBooking } from "react-icons/tb";
+import { SiExpedia } from "react-icons/si";
+import AppImage from "./../../Components/AppImage";
+import agoda from "../../assets/agoda.svg";
+import { IoIosCloseCircle } from "react-icons/io";
 
 const StaticSection2 = () => {
   const { t } = useTranslation();
+  const [isPopup, setIsPopup] = useState(false);
   return (
     <>
       <svg className="absolute" height="0" width="0">
@@ -55,8 +61,12 @@ const StaticSection2 = () => {
                   </span>
                 </div>
                 <div className="text-xs">
-                  <p className="font-bold">{t("staticSection2.premiumTitle")}</p>
-                  <p className="opacity-70">{t("staticSection2.premiumSubtitle")}</p>
+                  <p className="font-bold">
+                    {t("staticSection2.premiumTitle")}
+                  </p>
+                  <p className="opacity-70">
+                    {t("staticSection2.premiumSubtitle")}
+                  </p>
                 </div>
               </div>
               <div className="absolute bottom-20 -right-8 backdrop-blur-2xl px-5 py-3 rounded-full shadow-2xl flex items-center gap-2">
@@ -76,14 +86,15 @@ const StaticSection2 = () => {
                 <span className="text-6xl lg:text-[10rem] font-extrabold text-slate-300/50   -ml-1 select-none">
                   {t("staticSection2.hotelName")}
                 </span>
-                 
-                  <span className="text-5xl flex gap-2 lg:text-8xl  text-secondary  tracking-widest relative ltr:-mt-8  ltr:lg:-mt-15 z-20">
-                    <span className="rtl:order-1 order-0 ltr:font-black">{t("staticSection2.luxury")}{" "}</span>
-                    <span className="text-secondary rtl:font-black rtl:order-0 order-1 italic font-serif font-light">
-                      {t("staticSection2.hotel")}
-                    </span>
+
+                <span className="text-5xl flex gap-2 lg:text-8xl  text-secondary  tracking-widest relative ltr:-mt-8  ltr:lg:-mt-15 z-20">
+                  <span className="rtl:order-1 order-0 ltr:font-black">
+                    {t("staticSection2.luxury")}{" "}
                   </span>
-                 
+                  <span className="text-secondary rtl:font-black rtl:order-0 order-1 italic font-serif font-light">
+                    {t("staticSection2.hotel")}
+                  </span>
+                </span>
               </h1>
             </div>
             <div className="max-w-xl space-y-6">
@@ -94,7 +105,12 @@ const StaticSection2 = () => {
                 </span>
               </p>
               <div className="flex flex-wrap gap-8 items-center">
-                <button className="group relative px-10 py-5 bg-green   text-primary  hover:text-green rounded-full font-bold overflow-hidden transition-all  duration-800">
+                <button
+                  onClick={() => {
+                    setIsPopup(true);
+                  }}
+                  className="group relative px-10 py-5 bg-green   text-primary  hover:text-green rounded-full font-bold overflow-hidden transition-all  duration-800"
+                >
                   <span className="relative z-10 uppercase tracking-widest text-sm">
                     {t("staticSection2.cta")}
                   </span>
@@ -106,6 +122,56 @@ const StaticSection2 = () => {
           </div>
         </div>
       </section>
+
+      {isPopup && (
+        <div className="fixed inset-0 z-9999  flex items-center justify-center bg-black/70">
+          <div className="bg-primary relative p-10 gap-8 rounded-2xl flex flex-col items-center  justify-center">
+            <div
+              onClick={() => {
+                setIsPopup(false);
+              }}
+              className="absolute cursor-pointer top-0 font-bold end-0 m-3    flex items-center justify-center text-primary rounded-full"
+            >
+          <IoIosCloseCircle size={25} className="text-secondary" />
+
+            </div>
+            <div className="flex flex-col text-secondary justify-center items-center border-b border-gray-300">
+              <h2 className="text-2xl font-extrabold">
+                {t("hotelBooking.title")}
+              </h2>
+              <p>{t("hotelBooking.subtitle")}</p>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <a
+                href="https://www.booking.com/Share-20wXFWs"
+                target="_blank"
+                className="bg-[#003b95] text-primary  px-7 py-2 rounded-lg flex items-center gap-3"
+              >
+                <TbBrandBooking size={35} />
+
+                {t("hotelBooking.booking")}
+              </a>
+              <a
+                href="https://www.expedia.sa/en/Abha-Hotels-Midpoint-Hotel.h125608952.Hotel-Information"
+                className="bg-black text-primary px-7 py-2  rounded-lg flex items-center gap-3"
+                target="_blank"
+              >
+                <SiExpedia size={30} className="text-[#FDDB32]" />{" "}
+                {t("hotelBooking.expedia")}
+              </a>
+              <a
+                href="https://www.agoda.com/midpoint-hotel-h84904124/hotel/abha-sa.html?checkin=2026-03-08&checkout=2026-03-09&los=1&rooms=1&adults=2&children=0&cid=1922880&searchrequestid=b07a1ee8-8446-4341-b9fa-dcad755802b5&tag=3cde7f80-a923-450c-a416-936443e59e6c&ds=jaI7N2SK68JuFHKf"
+                target="_blank"
+                className="bg-[#20274D] text-primary px-7 py-2  rounded-lg flex items-center gap-3"
+              >
+                <AppImage src={agoda} className="w-15" />
+                {t("hotelBooking.agoda")}
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
