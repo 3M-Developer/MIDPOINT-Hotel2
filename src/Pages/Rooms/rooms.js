@@ -16,7 +16,7 @@ const rooms = [
     seriesKey: "rooms.series.luxury",
     titleKey: "rooms.standard.title",
     descKey: "rooms.standard.description",
-    size: "45m²",
+    size: "32m²",
     featureKey: "rooms.standard.feature",
     image: room1,
     reverse: false,
