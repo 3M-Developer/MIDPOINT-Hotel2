@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import bgEn from "../../assets/amenities/bgEn.webp";
 import bgAr from "../../assets/amenities/bgAr.webp";
 import { GoDotFill } from "react-icons/go";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
+import { SettingsContext } from "../../Context/SettingsContext";
 
 const HeroAmenities = () => {
   const { t } = useTranslation();
@@ -30,7 +32,18 @@ const HeroAmenities = () => {
       },
     },
   };
+    const {  i18n } = useTranslation();
+  const lang = i18n.language;
+  const { currency, siteName_ar, siteName_en } = useContext(SettingsContext );
   return (
+
+    <>
+       <Helmet>
+        <title>
+          {lang === "en" ? siteName_en : (siteName_ar ?? siteName_en)} |{" "}
+          {lang === "en" ? "Amenities" : ("المرافق" ?? "Amenities")}
+        </title>
+      </Helmet>
     <div
       className={`relative mb-4 h-[70vh] bg-cover bg-position-[40%,40vh] ltr:bg-(image:--bg) rtl:bg-(image:--bgR)`}
       style={{ "--bg": `url(${bgEn})`, "--bgR": `url(${bgAr})` }}
@@ -74,6 +87,7 @@ const HeroAmenities = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

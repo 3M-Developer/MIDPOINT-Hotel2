@@ -127,6 +127,7 @@
     "website": "www.example.com",
     "title": "Contact Us",
     "home": "Home",
+    "whatsapp":"Whatsapp",
     "form": {
       "title": "Get In Touch",
       "subtitle": "Send us a message and we'll respond as soon as possible",
@@ -357,7 +358,7 @@
   },
   "gym": {
     "title": "Fitness & Wellness",
-    "description": "Stay active during your stay with our fully equipped gym, professional trainers, and relaxing wellness programs."
+    "description": "Stay active during your stay with our fully equipped gym"
   },
   "ViewRooms": "View Rooms",
 
@@ -440,7 +441,9 @@
     "coffeeShop": "Coffee Shop",
     "restaurants": "Restaurants",
     "bar": "Bar",
-    "meetingRooms": "Meeting Rooms"
+    "meetingRooms": "Meeting Rooms",
+    "events": "Events Hall",
+    "Valet":"Valet Parking"
   },
   "amenitiesIntro": {
     "subtitle": "Curated Comfort",
@@ -477,5 +480,16 @@
   "Conference": {
     "title": " Al Hezam Conference Hall",
     "description": " We are in the business of exceeding expectations, we give you exactly what you want, and those special extras that you would never expect, to create something extraordinary. Whenever you have large or small meetings, Midpoint Hotel Meetings and Events facility offers great flexibility, nearly all of our venues can be configured to our client’s needs – theatre – style – Boardroom U – Shaped – with fully – equipped luxurious executive boardroom with unrivaled tastefully wonderful decorated atmosphere room surroundings and luxury conference rooms"
+  },
+  "eventsHall": {
+    "title": "      Ryman Banqueting Hall    ",
+    "description": " Unique Decorations WEDDING HALL overlooking THE unique CITY OF Abha, accented by exquisite Chandeliers and Magic type of atmosphere and surroundings. It accommodates up to (200) GUEST VOID OF ANY CENREPILLARS ensures breathtaking and EXHILARATING FEELING, allowing couples to celebrate with the special people of their lives."
+  },
+   "hotelBooking": {
+    "title": "Book Your Stay",
+    "subtitle": "Choose your preferred booking platform",
+    "booking": "Book on Booking.com",
+    "expedia": "Book on Expedia",
+    "agoda": "Book on Agoda"
   }
 }

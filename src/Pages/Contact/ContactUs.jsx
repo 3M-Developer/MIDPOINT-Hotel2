@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FiMapPin, FiPhone, FiMail } from "react-icons/fi";
 
 import { SettingsContext } from "../../Context/SettingsContext";
+import { FaWhatsapp } from "react-icons/fa";
 
 const ContactUs = () => {
   const { siteEmail, sitePhone, address_en, address_ar } =
@@ -48,7 +49,7 @@ const ContactUs = () => {
           <div className="mt-10 grid sm:grid-cols-2 gap-6">
             {[
               {
-                icon: <FiMapPin size={22} />,
+                icon: <FiMapPin size={25} />,
                 title: t("contact.findUsTitle"),
                 value: lang == "en" ? address_en : (address_ar ?? address_en),
               },
@@ -70,6 +71,18 @@ const ContactUs = () => {
                 value: (
                   <a
                     href={`tel:${sitePhone}`}
+                    className="hover:text-base transition"
+                  >
+                    {sitePhone}
+                  </a>
+                ),
+              },
+              {
+                icon: <FaWhatsapp  size={22} />,
+                title: t("contact.whatsapp"),
+                value: (
+                  <a
+                    href={`https://wa.me/966553071422`}
                     className="hover:text-base transition"
                   >
                     {sitePhone}

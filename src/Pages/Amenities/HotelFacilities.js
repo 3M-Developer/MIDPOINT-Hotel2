@@ -15,17 +15,18 @@ import {
   FaGlassMartiniAlt,
   FaUsers,
 } from "react-icons/fa";
+import { GiPartyPopper } from "react-icons/gi";
 
 const hotelFacilities = [
   { icon: FaConciergeBell, titleKey: "hotelFacilities.secretarial" },
   { icon: FaHandshake, titleKey: "hotelFacilities.meetGreet" },
-  { icon: FaUserTie, titleKey: "hotelFacilities.tourOffice" },
+  // { icon: FaUserTie, titleKey: "hotelFacilities.tourOffice" },
 
-  { icon: FaPlane, titleKey: "hotelFacilities.airlineOffice" },
-  { icon: FaBus, titleKey: "hotelFacilities.transportation" },
+  // { icon: FaPlane, titleKey: "hotelFacilities.airlineOffice" },
+  // { icon: FaBus, titleKey: "hotelFacilities.transportation" },
   // { icon: FaCar, titleKey: "hotelFacilities.rentCar" },
 
-  { icon: FaStore, titleKey: "hotelFacilities.souvenirShop" },
+  // { icon: FaStore, titleKey: "hotelFacilities.souvenirShop" },
   // { icon: FaSwimmer, titleKey: "hotelFacilities.outdoorPool" },
   { icon: FaHeart, titleKey: "hotelFacilities.healthClub" },
 
@@ -35,5 +36,8 @@ const hotelFacilities = [
 
   // { icon: FaGlassMartiniAlt, titleKey: "hotelFacilities.bar" },
   { icon: FaUsers, titleKey: "hotelFacilities.meetingRooms" },
+  { icon: GiPartyPopper , titleKey: "hotelFacilities.events" },
+  { icon: FaCar , titleKey: "hotelFacilities.Valet" },
+  
 ];
 export default hotelFacilities;

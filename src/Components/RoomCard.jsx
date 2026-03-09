@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { ApiAuthContext } from "../Context/AuthContext";
 import { useTranslation } from "react-i18next";
 import he from "he";
@@ -11,10 +11,14 @@ import { motion } from "framer-motion";
 import { MdOutlineSquareFoot, MdApartment } from "react-icons/md";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { FaWifi } from "react-icons/fa";
+import { TbBrandBooking } from "react-icons/tb";
+import { SiExpedia } from "react-icons/si";
+import agoda from "../assets/agoda.svg";
+import { IoIosCloseCircle } from "react-icons/io";
 const RoomCard = ({ room }) => {
   const videoRef = useRef(null);
   const { t, i18n } = useTranslation();
-
+  const [isPopup, setIsPopup] = useState(false);
   const contentOrder = room.reverse ? "lg:order-2" : "lg:order-1";
   const imageOrder = room.reverse ? "lg:order-1" : "lg:order-2";
   const { defaultLang } = useContext(ApiAuthContext);
@@ -67,7 +71,13 @@ const RoomCard = ({ room }) => {
 
   return (
     <>
-      <section className={room.reverse ? " bg-[#BB8632]/6 border-b border-t border-[#BB8632] py-10  px-4 lg:px-0" : "px-4 lg:px-0  "}>
+      <section
+        className={
+          room.reverse
+            ? " bg-[#BB8632]/6 border-b border-t border-[#BB8632] py-10  px-4 lg:px-0"
+            : "px-4 lg:px-0  "
+        }
+      >
         <div className="mx-auto max-w-7xl px-6 lg:px-5 bg-primary border border-gray-300  rounded-3xl py-10 shadow-xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
@@ -110,6 +120,7 @@ const RoomCard = ({ room }) => {
 
                   return (
                     <div
+                    
                       key={index}
                       className="flex flex-col items-center justify-center p-4 rounded-xl border border-secondary/5 bg-secondary/5"
                     >
@@ -125,7 +136,11 @@ const RoomCard = ({ room }) => {
 
               {/* Actions */}
               <div className="flex items-center gap-6 pt-4   justify-center">
-                <button className="bg-secondary hover:bg-secondary/90 text-primary px-8 py-3.5 rounded-lg font-bold transition-all flex items-center gap-2">
+                <button
+                 onClick={() => {
+                    setIsPopup(true);
+                  }}
+                className="bg-secondary hover:bg-secondary/90 text-primary px-8 py-3.5 rounded-lg font-bold transition-all flex items-center gap-2">
                   {t("common.bookNow")}
                   <span className="material-symbols-outlined text-sm rtl:rotate-180">
                     <IoMdArrowRoundForward size={20} />
@@ -154,6 +169,55 @@ const RoomCard = ({ room }) => {
           </div>
         </div>
       </section>
+
+      {isPopup && (
+        <div className="fixed inset-0 z-9999  flex items-center justify-center bg-black/70">
+          <div className="bg-primary relative p-10 gap-8 rounded-2xl flex flex-col items-center  justify-center">
+            <div
+              onClick={() => {
+                setIsPopup(false);
+              }}
+              className="absolute cursor-pointer top-0 font-bold end-0 m-3    flex items-center justify-center text-primary rounded-full"
+            >
+              <IoIosCloseCircle size={25} className="text-secondary" />
+            </div>
+            <div className="flex flex-col text-secondary  justify-center items-center border-b border-gray-300">
+              <h2 className="text-2xl font-extrabold">
+                {t("hotelBooking.title")}
+              </h2>
+              <p>{t("hotelBooking.subtitle")}</p>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <a
+                href="https://www.booking.com/Share-20wXFWs"
+                target="_blank"
+                className="bg-[#003b95] text-primary  px-7 py-2 rounded-lg flex items-center gap-3"
+              >
+                <TbBrandBooking size={35} />
+
+                {t("hotelBooking.booking")}
+              </a>
+              <a
+                href="https://www.expedia.sa/en/Abha-Hotels-Midpoint-Hotel.h125608952.Hotel-Information"
+                className="bg-black text-primary px-7 py-2  rounded-lg flex items-center gap-3"
+                target="_blank"
+              >
+                <SiExpedia size={30} className="text-[#FDDB32]" />{" "}
+                {t("hotelBooking.expedia")}
+              </a>
+              <a
+                href="https://www.agoda.com/midpoint-hotel-h84904124/hotel/abha-sa.html?checkin=2026-03-08&checkout=2026-03-09&los=1&rooms=1&adults=2&children=0&cid=1922880&searchrequestid=b07a1ee8-8446-4341-b9fa-dcad755802b5&tag=3cde7f80-a923-450c-a416-936443e59e6c&ds=jaI7N2SK68JuFHKf"
+                target="_blank"
+                className="bg-[#20274D] text-primary px-7 py-2  rounded-lg flex items-center gap-3"
+              >
+                <AppImage src={agoda} className="w-15" />
+                {t("hotelBooking.agoda")}
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
       {/* <div className="group relative flex flex-col h-90 bg-secondary   backdrop-blur-lg border-2 border-third/20 rounded-3xl overflow-hidden hover:border-secondary hover:shadow-lg my-2 hover:shadow-srcondary transition-all duration-500    ">
         <div className="h-[180px] flex items-start justify-center overflow-hidden relative   ">
           <AppImage
